@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+    header{
+        background-color: aqua;
+
+    }
+
+    header nav{
+        max-width: 85%;
+        background-color: red;
+        margin: 0 auto;
+
+    }
+
+    /* header nav ul{
+        text-align: end;
+    } */
+
+    header nav ul li{
+        display: inline-block;
+        padding: 2rem;
+    }
+
+    .toggle{
+        background-color: brown;
+        padding:10px 20px;
+        text-align: right;
+        font-size: 2rem;
+        color: white;
+        display: none;
+    }
+
+
+
+    section{
+        background-color: whitesmoke;
+        height: 80vh;
+        width: 100%;
+    }
+
+    section .wrapper{
+        display: flex;
+        height: 80vh;
+    }
+
+    section .wrapper .text{
+        width: 50%;
+        height: 100%;
+        background-color:brown;
+        /* color: white; */
+        padding-left: 7rem;
+        padding-top: 3rem;
+        line-height: 1.2;
+        font-size: 1.4rem;
+        font-weight: 200;
+    }
+
+    section .wrapper .image{
+        width: 50%;
+        height: 100%;
+        background-color: blueviolet;
+        background-image: url("../NewFLT/images/flut2.webp");
+        background-size: cover;
+    }
+    footer{
+        background-color: rgb(245,245,238);
+    }
+
+    .flex-div{
+        display: flex;
+        justify-content: space-between;
+        padding: 30px;
+        padding-top: 50px;
+    }
+
+    .flex-div div h3{
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .flex-div div{
+        line-height: 30px;
+        font-weight: 200;
+        font-size: 15px;
+    }
+
+    .flex-div button{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        background-color: rgb(242,101,34);
+
+    }
+
+
+
+    /* media query */
+    @media(max-width: 882px){
+        section.wrapper.text{
+            line-height: 1.2;
+            padding-left: 3.5rem;
+            padding-right: 3rem;
+            padding-top: 2rem;
+            font-size: 1.2rem;
+            /* background-color: #fff; */
+            /* color: white; */
+           
+        }
+    }
+
+    @media(max-width: 852px){
+        section .wrapper{
+
+            height: 78vh;
+        }
+    }
+
+    @media(max-width: 836px){
+        section .wrapper{
+            height: 68vh;
+        }
+
+        section .wrapper.text{
+            line-height: 1.5;
+          
+            
+        }
+    }
+
+    @media(max-width: 728px){
+        section.wrapper{
+            flex-wrap: wrap;
+        }
+
+        section .wrapper.text{
+            width: 100%;
+           
+        }
+
+        section .wrapper.image{
+            width: 100%;
+        }
+    }
+
+
+
+    @media (max-width: 682px){
+        .toggle{
+            display: block;
+        }
+
+        header nav ul li{
+            display: none;
+        }
+
+    }
+
+
+ 
+
+
+
+
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="toggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Our Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact US</a></li>
+                <li><a href="">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- hero page -->
+
+    <section>
+        <div class="wrapper">
+            <div class="text">
+                <h1>Lorem ipsum dolor sit, amet consectetur adipisicing.</h1>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="image"></div>
+
+        </div>
+    </section>
+    
+    <footer>
+        <div class="flex-div">
+            <div>
+                <img src="../safe/Ycombi/ycombinator-logo-ee6c80faf1d1ce2491d8.webp" width="70" alt="">
+            </div>
+            <div>
+                <h3> Programs</h3>
+                <p>YC Program</p>
+                <p>Startup School</p>
+                <p>Work at a Startup</p>
+                <p>Co-Founder Matching</p>
+         
+            </div>
+
+            <div>
+                <h3>Company</h3>
+                <p>YC Blog</p>
+                <p>Press</p>
+                <p>Contact</p>
+                <p>People</p>
+                <p>Careers</p>
+                <p>Privacy Policy</p>
+                <p>Security</p>
+                <p>Terms of Use</p>
+            </div>
+
+            <div>
+                <h3> Resources</h3>
+                <p>Startup Directory</p>
+                <p>Startup Library</p>
+                <p>Investors</p>
+                <p>SAFE</p>
+                <p>Hacker News</p>
+                <p>Launch YC</p>
+                <p>YC Deals</p>
+               
+            </div>
+
+            <div>
+                <p>Make something people want</p>
+                
+            </div>
+            <div>
+                <button>Apply</button>
+            </div>
+
+        </div>
+       
+    </footer>
+
+    
+    
+</body>
+</html>
